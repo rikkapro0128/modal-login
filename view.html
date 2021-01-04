@@ -4,41 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   <title>Modal login</title>
 </head>
 
 <body>
-  <div class="modal__login">
     <div class="box__login">
-      <div class="box__login--left">
-        <h1 class="box__login--title">Login with your account</h1>
-        <div class="box__login--username">
+
+        <h1 class="box__login--title m-15 no_highlight">Sign In</h1>
+
+        <button class="btn d-flex btn-blue btn-shadow-blue m-15">
+          <span class="box__login--icon-google"></span>
+          <h1 class="box__login--content content__google--center">Sign in with google</h1>
+        </button>
+
+        <span class="box__login--other m-15">
+          <h1 class="p-20 no_highlight">Or</h1>
+        </span>
+
+        <div class="box__login--username d-flex flex-d m-15">
           <!-- icon here -->
-          <i class="fas fa-user"></i>
-          <input type="text" name="username">
+          <span class="username__title no_highlight">User Name</span>
+          <div class="boder__radius">
+            <i class="fas fa-user boder__radius--position"></i>
+          </div>
+          <input class="input__style" placeholder="Eg: username0123" type="text" name="username">
         </div>
-        <div class="box_login--password">
+
+        <div class="box_login--password d-flex flex-d m-15">
           <!-- icon here -->
-          <i class="fas fa-lock"></i>
-          <input type="text" name="password">
+          <span class="username__title no_highlight">Password</span>
+          <div class="boder__radius">
+            <i class="fas fa-lock boder__radius--position"></i>
+          </div>
+          <input class="input__style" placeholder="Eg: 0123456789"  type="password" name="password">
         </div>
-      </div>
-      <dv class="box__login--right">
-        <div class="box__login--right-content">
-          <h1 class="right__content--title">
-            Trang quản lí sinh viên
-          </h1>
-          <span class="right__content--deription">
-            Đây là trang quản lí sinh viên được viết bởi sinh viên khoa công nghệ điện tử trường đại học công nghiệp tp.hcm, trải qua bao nhiêu cố gắng cuối cùng tui cũng viết xong cái trang này 
-            mong mọi người hãy vào xem và đóng góp ý kiến nha
-          </span>
+
+        <button class="btn btn-green btn-shadow-green d-flex d-j-around m-15">
+          <h1 class="box__login--content">Sign in with google</h1>
+        </button>
+
+        <div class="box__login--redirect m-15">
+          <span class="box__login--not-account no_highlight">Already have an account?</span>
+          <a class="box__login--redirect-login no_highlight" href="#">Login</a>
         </div>
-      </div>
+        
     </div>
-  </div>
 </body>
 
 </html>
