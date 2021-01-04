@@ -135,7 +135,7 @@ body {
     border-radius: 15px;
     border: none;
     background-color: #F2F3F5;
-    box-shadow: 1px 1px 15px #d2d2d2;
+    box-shadow: 1px 1px 10px #d2d2d2;
 }
 
 .box__login--redirect-login {
@@ -159,7 +159,7 @@ body {
     border-radius: 50px;
     transform: translateY(105%);
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 1px 15px #d2d2d2;
+    box-shadow: 1px 1px 10px #d2d2d2;
 }
 
 .no_highlight {
